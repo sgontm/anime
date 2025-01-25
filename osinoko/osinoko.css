@@ -1,0 +1,474 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.body {
+    overflow-x: hidden;
+}
+
+
+
+.fixed.noscroll {
+    overflow: hidden;
+}
+
+/* TODO 背景画像の切り替わりを12/8にする　教科書にあるからそれを見ながら */
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 14px;
+    line-height: 1;
+    z-index: 999;
+    filter: drop-shadow(1px 3px 5px rgba(0,0,0,0.5));
+    background-color: #02adb0;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+}
+#page-top a {
+    text-decoration: none;
+    color: #fff;
+    padding: 28px 5px;
+    text-align: center;
+    display: block;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+#page-top a:hover {
+    text-decoration: none;
+    opacity: .5;
+}
+
+
+
+.top {
+    background-color: #151515;
+    width: 100vw;
+    height: 100vh;
+    animation: slideAnime 15s infinite;
+}
+
+.title {
+    position: relative;
+}
+
+.topimg {
+    position: absolute;
+    width: 1000px;
+    top: 75px;
+    left: 200px;
+}
+
+.topright {
+    position: absolute;
+    top: 30px;
+    left: 110px;
+}
+
+.topleft {
+    position: absolute;
+    top: 650px;
+    left: 800px;
+}
+
+.mv {
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+  .item {
+    position: absolute;
+    top: 75px;
+    left: 200px;
+    opacity: 0;
+    animation: img-change 15s infinite;
+  }
+  .item:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .item:nth-child(2) {
+    animation-delay: 5s;
+  }
+  .item:nth-child(3) {
+    animation-delay: 10s;
+  }
+  
+  .item img {
+    width: 1000px;
+    object-fit: cover;
+  }
+  
+
+  @keyframes img-change {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+.synopsis {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#151515,#272727);
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+}
+
+.synopsis h1 {
+    color: #ffffff;
+    text-align: center;
+    padding: 250px 0px 30px 0px;
+    font-family: "shippori-antique-b1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.synopsis p {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding: 0px 200px 0px 200px;
+    font-family: "shippori-antique-b1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.synopsis-text {
+    position: absolute;
+    z-index: 10;
+}
+
+.anima {
+    opacity : 0;
+    transform : translate(0, 80px);
+    transition : all 800ms;
+}
+
+.anima.active{
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+.video {
+    position: relative;
+    top: 0;
+    z-index: 5;
+}
+
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.omote1{
+    position: relative;
+  }
+  
+.omote1 div{
+    position: absolute;
+    top: -300px;
+    left: -600px;
+    transition: .7s;
+    backface-visibility: hidden;
+}
+
+.omote2{
+    position: relative;
+  }
+  
+.omote2 div{
+    position: absolute;
+    top: -300px;
+    left: -200px;
+    transition: .7s;
+    backface-visibility: hidden;
+}
+
+.omote3{
+    position: relative;
+  }
+  
+.omote3 div{
+    position: absolute;
+    top: -300px;
+    left: 200px;
+    transition: .7s;
+    backface-visibility: hidden;
+}
+
+
+.ura:hover .toranpu{
+    transform: rotateY(-180deg);
+}
+
+.ura .text {
+    transform: rotateY(180deg);
+}
+
+.ura:hover .text {
+    transform: rotateY(0);
+}
+
+
+/* .ura {
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    width: 280px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    margin: 50px;
+    z-index: 4;
+} */
+.ura .text {
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    width: 280px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    margin: 50px;
+    z-index: 4;
+}
+
+.ura .text h2{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255,255,255,0.1);
+}
+
+.ura .text h3 {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.ura .text p {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+
+.ura .toranpu {
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    width: 280px;
+    height: 450px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    margin: 50px;
+    z-index: 4;
+}
+
+.forle {
+    text-align: center;
+    padding: 10px 10px 50px 10px;
+    display: flex ;
+    justify-content: center;
+}
+
+.forle h1{
+    text-align: center;
+}
+
+.slider {
+    width: 1000px;
+    margin: 40px auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000 !important;
+}
+
+.slider img{
+    margin: 10px;
+}
+
+.slider-content  {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 100px;
+    display: flex !important;
+}
+
+.boufrin {
+    background-color: #ffffff;
+}
+
+.slider-content img {
+    height: 700px;
+    margin: 10px 10px 10px 100px;
+}
+
+.souso img {
+    background-image: url(img/souso\ ha.png);
+    background-repeat: no-repeat;
+    background-size: 420px;
+    background-position: center;
+}
+
+.slider-content div{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    position: relative;
+}
+
+.souso div {
+    background-image: url("img/sousohaikei.png");
+}
+
+.slider-content p {
+    font-size: 25px;
+    margin: 10px 100px 10px 100px;
+    color: #ffffff;
+}
+
+.slider-p p:nth-child(1) {
+    margin-bottom: 1px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.slider-p p:nth-child(2) {
+    margin-top: 0;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.slider-p p:nth-child(3) {
+    margin-top: 40px;
+    font-size: 20px;
+    padding-top: 150px;
+    width: 400px;
+}
+
+.song {
+    background-color: #262A26;
+    display: flex;
+    justify-items: center;
+    padding: 100px;
+}
+
+.artist {
+    padding: 30px;
+    text-align: center;
+}
+
+.artist img{
+    object-fit: cover;
+}
+
+.artist p {
+    color: #ffffff;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #02adb0;
+    padding: 10px 0;
+  }
+  
+  footer p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .themesong {
+    background-color: #262A26;
+    padding: 10px 100px 100px 100px;
+}
+
+.music {
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 50px;
+    font-size: 20px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.music h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.music p {
+    font-size: 20px;
+    padding: 50px;
+    text-align: left;
+}
+
+
+.signaturetune {
+    display: flex;
+    justify-content: center;
+}
+
+.signaturetune p{
+    font-size: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+

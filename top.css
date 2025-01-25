@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #272727;
+}
+
+.top {
+    width: 1440px;
+    height: 700px;
+}
+
+.top h1{ 
+    color: #ffffff;
+    text-align: center;
+    padding: 300px 0px 10px 0px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 100px;
+    margin: 20px;
+}
+
+.TextTyping span {
+	display: none;
+}
+
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+ 	content: "|";
+	animation: typinganime .9s ease infinite;
+}
+
+@keyframes typinganime{
+	from{opacity:0}
+	to{opacity:0}
+}
+
+
+.arrangement {
+    color: #ffffff;
+    text-align: center;
+    width: 1440px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FIXME */
+.genre {
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 10px;
+    background-color: gray;
+    width: 600px;
+    height: 400px;
+    position: relative;
+  }
+  .cara img {
+    width: 600px;
+    height: 400px;
+  }
+  
+  .card::before {
+    content: "";
+    background-color: #14B682;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+    right: -10px;
+    bottom: -10px;
+  }
+  
+  .card::after {
+    content: "";
+    /*  再生マークの画像いれて〜！一旦仮で置いてます  */
+    background-image: url(imga/Group\ 75.png);
+    background-color: #fff;
+    background-size: 70px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+  }
+  
+  .card:hover::after {
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+    transition: 0.5s;
+  }
+
+.detail h1{
+    font-size: 17px;
+    padding: 20px;
+    color: #fff;
+}
+
+.detail p {
+    padding: 20px;
+    width: 580px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.detail {
+    text-align: center;
+    padding: 20px;
+
+}
+
+.category h2 {
+    font-size: 16px;
+    background-color: #14B682;
+    margin: 0px 10px 10px 10px;
+    width: 150px;
+    display: inline-block; 
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+footer {
+    background-color: #14B682;
+    padding: 10px 0;
+}
+  
+footer p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    background-color: #14B682;
+}
