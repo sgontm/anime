@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body {
+body {  
     background-color: #272727;
 }
 
@@ -44,12 +44,22 @@ body {
 	to{opacity:0}
 }
 
+.scroll_up {
+    transition: 0.8s ease-in-out;
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  .scroll_up.on {
+    transform: translateY(0);
+    opacity: 1.0;
+  }
+
 
 .arrangement {
     color: #ffffff;
     text-align: center;
     width: 1400px;
-    height: 800px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -26,6 +26,20 @@ $(function(){
                 }
             });
             }
+
+            $(window).scroll(function () {
+                var scrollAnimationElm = document.querySelectorAll('.scroll_up');
+                var scrollAnimationFunc = function () {
+                  for (var i = 0; i < scrollAnimationElm.length; i++) {
+                    var triggerMargin = 100;
+                    if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+                      scrollAnimationElm[i].classList.add('on');
+                    }
+                  }
+                }
+                window.addEventListener('load', scrollAnimationFunc);
+                window.addEventListener('scroll', scrollAnimationFunc);
+              });
             
     $(window).on('load',function(){	//画面遷移時にギャラリーの画像が被らないように、すべての読み込みが終わった後に実行する
 
