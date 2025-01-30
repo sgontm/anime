@@ -258,7 +258,7 @@
 
 
 .ura .text {
-    background-image: url(img/card01.png);
+    background-image: url(img/card01_4.png);
     background-size: 280px;
     border-top: 1px solid rgba(255,255,255,0.5);
     border-left: 1px solid rgba(255,255,255,0.5);
@@ -296,7 +296,7 @@
 }
 
 .ura .text2 {
-    background-image: url(img/card02.png);
+    background-image: url(img/card02_4.png);
     background-size: 280px;
     border-top: 1px solid rgba(255,255,255,0.5);
     border-left: 1px solid rgba(255,255,255,0.5);
@@ -334,7 +334,7 @@
 }
 
 .ura .text3 {
-    background-image: url(img/card03.png);
+    background-image: url(img/card03_4.png);
     background-size: 280px;
     border-top: 1px solid rgba(255,255,255,0.5);
     border-left: 1px solid rgba(255,255,255,0.5);
