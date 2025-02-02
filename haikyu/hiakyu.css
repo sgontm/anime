@@ -240,25 +240,25 @@
     transform: rotateY(0);
 }
 
+.ura .text2 {
+    transform: rotateY(180deg);
+}
 
-/* .ura {
-    border-top: 1px solid rgba(255,255,255,0.5);
-    border-left: 1px solid rgba(255,255,255,0.5);
-    width: 280px;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(5px);
-    overflow: hidden;
-    margin: 50px;
-    z-index: 4;
-} */
+.ura:hover .text2 {
+    transform: rotateY(0);
+}
+
+.ura .text3 {
+    transform: rotateY(180deg);
+}
+
+.ura:hover .text3 {
+    transform: rotateY(0);
+}
+
 .ura .text {
+    background-image: url(img/card01.png);
+    background-size: 280px;
     border-top: 1px solid rgba(255,255,255,0.5);
     border-left: 1px solid rgba(255,255,255,0.5);
     width: 280px;
@@ -269,30 +269,63 @@
     text-align: center;
     border-radius: 25px;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    background: rgba(255,255,255,0.1);
     backdrop-filter: blur(5px);
     overflow: hidden;
     margin: 50px;
     z-index: 4;
 }
 
-.ura .text h2{
-    position: absolute;
-    top: 50px;
-    right: 30px;
-    font-size: 8rem;
-    color: rgba(255,255,255,0.1);
-}
-
 .ura .text h3 {
-    color: #fff;
+    color: #070707;
     font-size: 1.8rem;
 }
 
-.ura .text p {
-    font-size: 1rem;
-    color: #fff;
-    font-weight: 300;
+.ura .text2 {
+    background-image: url(img/card02.png);
+    background-size: 280px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    width: 280px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    margin: 50px;
+    z-index: 4;
+}
+
+.ura .text2 h3 {
+    color: #070707;
+    font-size: 1.8rem;
+}
+
+.ura .text3 {
+    background-image: url(img/card03.png);
+    background-size: 280px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    width: 280px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    margin: 50px;
+    z-index: 4;
+}
+
+.ura .text3 h3 {
+    color: #070707;
+    font-size: 1.8rem;
 }
 
 
