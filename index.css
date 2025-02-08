@@ -17,16 +17,21 @@ body {
     text-align: center;
     padding: 300px 0px 10px 0px;
     font-size: 100px;
-    display: flex;
+    position: absolute;
+    left: 170px;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .top h2{
+    position: absolute;
     color: #ffffff;
     text-align: center;
     font-size: 100px;
     margin: 20px;
+    top: 450px;
+    left: 650px;
 }
 
 .TextTyping span {
@@ -67,7 +72,7 @@ body {
 
 /* FIXME */
 .genre {
-    width: 100vw;
+    /* width: 100vw; */
     /* height: 500px; */
     display: flex;
     justify-content: center;
