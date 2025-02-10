@@ -18,7 +18,7 @@ body {
     padding: 300px 0px 10px 0px;
     font-size: 100px;
     position: absolute;
-    left: 170px;
+    left: 330px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -180,4 +180,49 @@ footer p {
     text-align: center;
     font-size: 15px;
     background-color: #14B682;
+}
+
+@media (max-width:390px) {
+
+    .top{
+        width: 390px;
+        height: 300px;
+    }
+
+    .top h1{
+        color: #ffffff;
+        text-align: center;
+        padding: 150px 0px 10px 0px;
+        font-size: 30px;
+        position: absolute;
+        left: 79px;
+    }
+
+    .top h2{
+        font-size: 20px;
+        position: absolute;
+        color: #ffffff;
+        text-align: center;
+        margin: 20px;
+        top: 180px;
+        left: 160px;
+    }
+
+    .arrangement {
+        width: 390px;
+        height: 300px;
+        color: #ffffff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .arrangement h1{
+        font-size: 15px;
+        padding: 10px;
+    }
+
+ 
 }
