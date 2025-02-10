@@ -219,5 +219,43 @@ footer p {
         padding: 10px;
     }
 
+    .card {
+    margin: 10px;
+    background-color: gray;
+    width: 150px;
+    height: 100px;
+    position: relative;
+  }
+
+  .card img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .card::before {
+    content: "";
+    background-color: #14B682;
+    width:150px;
+    height: 100px;
+    position: absolute;
+    z-index: -1;
+    right: -10px;
+    bottom: -10px;
+  }
+  
+  .card::after {
+    content: "";
+    /*  再生マークの画像いれて〜！一旦仮で置いてます  */
+    background-image: url(imga/Group\ 75.png);
+    background-color: #fff;
+    background-size: 70px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 50%;
+  }
+
  
 }
