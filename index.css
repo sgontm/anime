@@ -10,6 +10,7 @@ body {
 .top {
     width: 1400px;
     height: 700px;
+    position: relative;
 }
 
 .top h1{ 
@@ -17,16 +18,19 @@ body {
     text-align: center;
     padding: 300px 0px 10px 0px;
     font-size: 100px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    position: absolute;
+    left: 330px;
+
 }
 
 .top h2{
     color: #ffffff;
     text-align: center;
-    font-size: 100px;
+    font-size: 80px;
     margin: 20px;
+    position: absolute;
+    top: 500px;
+    left: 650px;
 }
 
 .TextTyping span {
@@ -76,6 +80,7 @@ body {
 
 .grid {
     position: relative;
+    width: 1400px;
 }
 
 .item {
@@ -166,6 +171,7 @@ body {
 }
 
 footer {
+    width: 1400px;
     background-color: #14B682;
     padding: 10px 0;
 }
@@ -177,7 +183,7 @@ footer p {
     background-color: #14B682;
 }
 
-@media (max-width:390px) {
+/* @media (max-width:390px) {
 
     .top{
         width: 390px;
@@ -243,6 +249,15 @@ footer p {
     bottom: -10px;
   }
   
+
+
+
+
+
+
+
+
+
   .card::after {
     content: "";
     background-image: url(imga/Group\ 75.png);
@@ -256,4 +271,4 @@ footer p {
     border-radius: 50%;
   }
 
-}
+} */
