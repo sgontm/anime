@@ -33,21 +33,6 @@ body {
     left: 650px;
 }
 
-.TextTyping span {
-	display: none;
-}
-
-/*文字列後ろの線の設定*/
-.TextTyping::after {
- 	content: "|";
-	animation: typinganime .9s ease infinite;
-}
-
-@keyframes typinganime{
-	from{opacity:0}
-	to{opacity:0}
-}
-
 .scroll_up {
     transition: 0.8s ease-in-out;
     transform: translateY(30px);
