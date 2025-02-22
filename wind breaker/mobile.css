@@ -18,6 +18,36 @@
         z-index: 5;
     }
 
+    .synopsis {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(#151515,#272727);
+        color: #ffffff;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+    }
+
+    .synopsis h1 {
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+        padding: 100px 0px 30px 0px;
+        font-family: "shippori-antique-b1", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .synopsis p {
+        font-size: 14px;
+        color: #ffffff;
+        text-align: center;
+        padding: 0px 200px 0px 200px;
+        font-family: "shippori-antique-b1", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
     .video {
         display: none !important;
     }
