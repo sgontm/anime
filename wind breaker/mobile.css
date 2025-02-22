@@ -39,10 +39,12 @@
     }
     
     .synopsis p {
+        width: 90%;
         font-size: 14px;
         color: #ffffff;
         text-align: center;
-        padding: 0px 200px 0px 200px;
+        padding: 0px;
+        margin: 0 auto;
         font-family: "shippori-antique-b1", sans-serif;
         font-weight: 400;
         font-style: normal;
