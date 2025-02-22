@@ -18,6 +18,10 @@
         z-index: 5;
     }
 
+    .video {
+        display: none !important;
+    }
+
     .song {
         background-color: #262A26;
         display: block;
