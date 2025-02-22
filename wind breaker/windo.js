@@ -189,5 +189,17 @@ $(function(){
 
         animateBloks();
 
+        $('.slick-slider').slick({
+            infinite: true, // ループ再生 有効
+            slidesToShow: 3, // 一度に表示するスライドの数 3
+            slidesToScroll: 1, // 一度にスクロールするスライドの数 1
+            responsive: [{ // レスポンシブ対応に関する記述
+                breakpoint: 767, // ブレイクポイント 767px
+                settings: { // その場合のオプション設定
+                slidesToShow: 1, // 一度に表示するスライドの数 1
+                // オプションを追加する場合はここ
+                }
+            }]
+        });
 
 });

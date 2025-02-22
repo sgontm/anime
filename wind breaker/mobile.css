@@ -1,0 +1,16 @@
+@media all and (max-width: 670px)  {
+
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+
+    .headline {
+        position: absolute;
+        top: 75%;
+        left: 0;
+        color: #151515;
+        text-shadow: 0 0 10px #fff;
+        font-size: 50px;
+        transform: translateY(-10%,-70%);
+        z-index: 5;
+    }
+}

@@ -46,6 +46,8 @@
     opacity: .5;
 }
 
+.pc { display: block !important; }
+.sp { display: none !important; }
 
 
 .top {
