@@ -1,5 +1,9 @@
 @media all and (max-width: 670px)  {
 
+    body {
+        overflow-x: hidden;
+    }
+
     .pc { display: none !important; }
     .sp { display: block !important; }
 
@@ -12,5 +16,34 @@
         font-size: 50px;
         transform: translateY(-10%,-70%);
         z-index: 5;
+    }
+
+    .song {
+        display: block;
+    }
+
+    .artist {
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .artist img{
+        object-fit: cover;
+    }
+    
+    .artist p {
+        color: #ffffff;
+        line-height: 30px;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .ar {
+        width: 300px;
+        height: 141px;
+    }
+
+    .ic {
+        width: 35px;
     }
 }
