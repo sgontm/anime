@@ -554,8 +554,10 @@
 .song {
     background-color: #262A26;
     display: flex;
-    justify-items: center;
-    padding: 100px;
+   justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .artist {
