@@ -1,5 +1,8 @@
 @media all and (max-width: 670px)  {
 
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+
     .top{
         width: 390px;
         height: 300px;
@@ -45,9 +48,9 @@
        width: 390px;
     }
 
-    /* .grid {
+    .grid {
         position: relative;
-    } */
+    }
     
     .item {
         display: block;
