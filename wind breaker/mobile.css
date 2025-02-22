@@ -2,7 +2,6 @@
 
     body {
         overflow-x: hidden;
-        width: 670px;
     }
 
     .pc { display: none !important; }
