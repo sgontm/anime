@@ -8,6 +8,9 @@
     overflow-x: hidden;
 }
 
+.pc {display: block !important; }
+.sp {display: none !important; }
+
 
 
 .fixed.noscroll {
