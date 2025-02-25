@@ -9,22 +9,19 @@
     }
 
     .top h1{
+       margin: 0 auto;
         color: #ffffff;
         text-align: center;
         padding: 150px 0px 10px 0px;
         font-size: 30px;
-        position: absolute;
-        left: 220px;
     }
 
     .top h2{
+        margin: 0 auto;
         font-size: 20px;
-        position: absolute;
         color: #ffffff;
         text-align: center;
         margin: 20px;
-        top: 180px;
-        left: 300px;
     }
 
     .arrangement {
