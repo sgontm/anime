@@ -4,7 +4,7 @@
     .sp { display: block !important; }
 
     .top{
-        width: 390px;
+        width: 100%;
         height: 300px;
     }
 
@@ -14,7 +14,7 @@
         padding: 150px 0px 10px 0px;
         font-size: 30px;
         position: absolute;
-        left: 79px;
+        left: 220px;
     }
 
     .top h2{
@@ -24,11 +24,11 @@
         text-align: center;
         margin: 20px;
         top: 180px;
-        left: 160px;
+        left: 300px;
     }
 
     .arrangement {
-        width: 390px;
+        width: 100%;
         height: 300px;
         color: #ffffff;
         text-align: center;
@@ -50,6 +50,7 @@
 
     .grid {
         position: relative;
+        width: 100%;
     }
     
     .item {
@@ -140,7 +141,7 @@
 }
 
 footer {
-    width: 390px;
+    width: 100%;
     background-color: #14B682;
     padding: 10px 0;
 }
@@ -151,4 +152,28 @@ footer p {
     font-size: 15px;
     background-color: #14B682;
 }
+
+.sort-btn{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:10px 20px;
+}
+
+.sort-btn li{
+    background:#eee;
+    list-style:none;
+    border-radius:10px;
+    cursor: pointer;
+    padding: 5px;
+    margin:5px 5px;
+    font-size: 10px;
+}
+
+.sort-btn li.active{/*ボタンに現在地＝activeというクラス名がついたら背景色を変更*/
+    background:#8b8b8b;	
+    color: #fff;
+}
+
 }
