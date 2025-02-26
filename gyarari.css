@@ -21,27 +21,5 @@
 }
 
 @media (max-width:390px) {
-	.sort-btn{
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		padding:10px 20px;
-	}
-	
-	.sort-btn li{
-		background:#eee;
-		list-style:none;
-		border-radius:10px;
-		cursor: pointer;
-		padding: 5px;
-		margin:5px 5px;
-		font-size: 5px;
-	}
-	
-	.sort-btn li.active{/*ボタンに現在地＝activeというクラス名がついたら背景色を変更*/
-		background:#8b8b8b;	
-		color: #fff;
-	}
 	
 }
