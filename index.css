@@ -1,167 +1,179 @@
+/* --- 全体設定 --- */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* サイズ計算を楽にするために推奨 */
 }
 
-body {  
-    background-color: #272727;
-    overflow-x: hidden;
+body {
+  background-color: #272727;
+  overflow-x: hidden;
+  color: #ffffff; /* 全体の文字色を白に統一 */
 }
 
-.pc{display: block !important;}
-.sp {display:none !important; }
+/* 表示切り替え */
+.pc { display: block !important; }
+.sp { display: none !important; }
 
+/* --- 共通レイアウト補助 --- */
+.container-l {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* --- メインビジュアル (.top) --- */
 .top {
-    width: 1440px;
-    height: 700px;
+  max-width: 1440px;
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.top h1{ 
-    color: #ffffff;
-    text-align: center;
-    padding: 300px 0px 10px 0px;
-    font-size: 100px;
-
+.top h1 {
+  padding: 300px 0 10px;
+  font-size: 100px;
 }
 
-.top h2{
-    color: #ffffff;
-    text-align: center;
-    font-size: 80px;
-    margin: 20px;
+.top h2 {
+  font-size: 80px;
+  margin: 20px;
 }
 
+/* --- アニメーション --- */
 .scroll_up {
-    transition: 0.8s ease-in-out;
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  .scroll_up.on {
-    transform: translateY(0);
-    opacity: 1.0;
-  }
-
-
-.arrangement {
-    color: #ffffff;
-    text-align: center;
-    width: 1440px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1.0;
 }
 
-/* FIXME */
+/* --- 配置エリア (.arrangement / .genre) --- */
+.arrangement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .genre {
-    /* width: 100vw; */
-    /* height: 500px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid {
-    position: relative;
-    width: 1440px;
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .item {
-    display: block;
-    position: absolute;
-    margin: 70px;
+  display: block;
+  position: absolute;
+  margin: 70px;
 }
 
+/* --- カードデザイン (.card) --- */
 .muuri-item-conten {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .card {
-    margin: 10px;
-    background-color: gray;
-    width: 600px;
-    height: 400px;
-    position: relative;
-  }
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+  background-color: gray;
+}
 
-  .card img {
-    width: 600px;
-    height: 400px;
-  }
-  
-  .card::before {
-    content: "";
-    background-color: #14B682;
-    width: 600px;
-    height: 400px;
-    position: absolute;
-    z-index: -1;
-    right: -10px;
-    bottom: -10px;
-  }
-  
-  .card::after {
-    content: "";
-    /*  再生マークの画像いれて〜！一旦仮で置いてます  */
-    background-image: url(imga/Group\ 75.png);
-    background-color: #fff;
-    background-size: 70px;
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50%;
-  }
-  
-  .card:hover::after {
-    background-size: 80px;
-    width: 80px;
-    height: 80px;
-    transition: 0.5s;
-  }
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 画像の歪み防止 */
+  vertical-align: bottom;
+}
 
-.detail h1{
-    font-size: 17px;
-    padding: 20px;
-    color: #fff;
+/* 背景の緑ボックス */
+.card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -10px;
+  bottom: -10px;
+  width: 100%; /* 親と同じサイズ */
+  height: 100%;
+  background-color: #14B682;
+}
+
+/* 再生マーク */
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff url("imga/Group 75.png") no-repeat center / 70px;
+  transition: 0.5s;
+}
+
+.card:hover::after {
+  width: 80px;
+  height: 80px;
+  background-size: 80px;
+}
+
+/* --- 詳細テキスト (.detail) --- */
+.detail {
+  padding: 20px;
+  text-align: center;
+}
+
+.detail h1 {
+  font-size: 17px;
+  padding: 20px;
 }
 
 .detail p {
-    padding: 20px;
-    width: 580px;
-    font-size: 20px;
-    color: #fff;
-}
-
-.detail {
-    text-align: center;
-    padding: 20px;
-
+  width: 580px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 20px;
 }
 
 .category h2 {
-    font-size: 16px;
-    background-color: #14B682;
-    margin: 0px 10px 10px 10px;
-    width: 150px;
-    display: inline-block; 
-    text-align: center;
-    padding: 10px;
-    color: #fff;
+  display: inline-block;
+  width: 150px;
+  margin: 0 10px 10px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #14B682;
+  text-align: center;
 }
 
+/* --- フッター --- */
 footer {
-    width: 1440px;
-    background-color: #14B682;
-    padding: 10px 0;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: #14B682;
 }
-  
+
 footer p {
-    color: #ffffff;
-    text-align: center;
-    font-size: 15px;
-    background-color: #14B682;
+  font-size: 15px;
+  text-align: center;
 }

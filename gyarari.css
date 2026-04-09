@@ -1,25 +1,45 @@
-.sort-btn{
-	width: 1440px;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	padding:50px 0;
+/* --- ソートボタンエリア --- */
+.sort-btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1440px; /* 固定幅ではなく最大幅に */
+  width: 100%;
+  margin: 0 auto;    /* 中央寄せ */
+  padding: 50px 0;
+  list-style: none;  /* 親で指定しておくとスッキリします */
 }
 
-.sort-btn li{
-	background:#eee;
-    list-style:none;
-	border-radius:10px;
-	cursor: pointer;
-	padding: 10px;
-	margin:0 10px;
+.sort-btn li {
+  margin: 5px 10px;  /* 上下にも少し余白があると折り返し時に綺麗です */
+  padding: 10px 20px; /* 左右の余白を少し広げると押しやすくなります */
+  background: #eee;
+  color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* 変化を滑らかに */
 }
 
-.sort-btn li.active{/*ボタンに現在地＝activeというクラス名がついたら背景色を変更*/
-	background:#8b8b8b;	
-    color: #fff;
+/* ホバー時の演出（PC向け） */
+.sort-btn li:hover {
+  background: #ddd;
 }
 
-@media (max-width:390px) {
-	
+/* アクティブ状態 */
+.sort-btn li.active {
+  background: #8b8b8b;
+  color: #fff;
+}
+
+/* --- スマホ用 (390px以下) --- */
+@media (max-width: 390px) {
+  .sort-btn {
+    padding: 20px 10px; /* 余白を狭める */
+  }
+
+  .sort-btn li {
+    margin: 5px;       /* ボタン同士の間隔を詰める */
+    padding: 8px 12px; /* 少し小さくして並びやすく */
+    font-size: 12px;
+  }
 }
