@@ -101,7 +101,7 @@ body {
 .card img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 画像の歪み防止 */
+  object-fit: cover; 
   vertical-align: bottom;
 }
 
@@ -126,7 +126,7 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: #fff url("imga/Group 75.png") no-repeat center / 70px;
+  background: #fff url("/imga/Group 75.png") no-repeat center / 70px;
   transition: 0.5s;
 }
 
@@ -166,7 +166,7 @@ body {
 
 /* --- フッター --- */
 footer {
-  max-width: 1440px;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
   padding: 10px 0;
